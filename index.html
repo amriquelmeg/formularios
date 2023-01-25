@@ -8,9 +8,49 @@
     </head>
 
     <body>
-        <form action="registrardatos.php" method="post">
+        <form action="" method="post">
             nombre
-            <input type="text">
+            <input type="text" name="nombre" size="30"> 
+            <br>
+            contraseña
+            <input type="password" name="contraseña">
+            <br>
+            comentarios: <br>
+            <textarea name="comentarios" rows="7" cols="70"></textarea>
+            <br>
+            Idiomas que hablas:
+            <input type="checkbox" name="español">español<br>
+            <input type="checkbox" name="inglés">inglés<br>
+            <input type="checkbox" name="francés">francés<br>
+            qué prefieres<br>
+            <input type="radio" name="frutas" value="1">mandarinas<br>
+            <input type="radio" name="frutas" value="2">manzanas<br>
+            <input type="radio" name="frutas" value="3">cerezas<br>
+            selecciona pais:<br>
+            <select name="pais" size="5">
+                <option value="1">España</option>
+                <option value="2">Portugal</option>
+                <option value="3">Suiza</option>
+                <option value="4">Polonia</option>
+                <option value="5">Francia</option>
+                <option value="6">Chile</option>
+                <option value="7">Cuba</option>
+            </select><br>
+            seleccione colores (Presione Ctrl para seleccionar varios colores)<br>
+            <select name="colores[]" size="5" multiple>
+    <option value="1">Rojo</option>
+    <option value="2">Verde</option>
+    <option value="3">Azul</option>
+    <option value="4">Amarillo</option>
+    <option value="5">Blanco</option>
+    <option value="6">Negro</option>
+    <option value="7">Naranja</option>
+    <option value="8">Violeta</option>
+  </select>
+  <br>
+            <br>
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
         </form>
     </body>
 </html>
