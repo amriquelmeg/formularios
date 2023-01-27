@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="estilos.css" />
-        <link rel="shortcut icon" type="image/png" href="">
-    </head>
 
-    <body>
-        <form action="" method="post">
-            nombre
-            <input type="text" name="nombre" size="30"> 
-            <br>
-            contraseña
-            <input type="password" name="contraseña">
-            <br>
-            comentarios: <br>
-            <textarea name="comentarios" rows="7" cols="70"></textarea>
-            <br>
-            Idiomas que hablas:
-            <input type="checkbox" name="español">español<br>
-            <input type="checkbox" name="inglés">inglés<br>
-            <input type="checkbox" name="francés">francés<br>
-            qué prefieres<br>
-            <input type="radio" name="frutas" value="1">mandarinas<br>
-            <input type="radio" name="frutas" value="2">manzanas<br>
-            <input type="radio" name="frutas" value="3">cerezas<br>
-            selecciona pais:<br>
-            <select name="pais" size="5">
-                <option value="1">España</option>
-                <option value="2">Portugal</option>
-                <option value="3">Suiza</option>
-                <option value="4">Polonia</option>
-                <option value="5">Francia</option>
-                <option value="6">Chile</option>
-                <option value="7">Cuba</option>
-            </select><br>
-            seleccione colores (Presione Ctrl para seleccionar varios colores)<br>
-            <select name="colores[]" size="5" multiple>
-    <option value="1">Rojo</option>
-    <option value="2">Verde</option>
-    <option value="3">Azul</option>
-    <option value="4">Amarillo</option>
-    <option value="5">Blanco</option>
-    <option value="6">Negro</option>
-    <option value="7">Naranja</option>
-    <option value="8">Violeta</option>
-  </select>
-  <br>
-            <br>
-            <input type="submit" value="enviar">
-            <input type="reset" value="borrar">
-        </form>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link rel="shortcut icon" type="image/png" href="">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Datos personales</legend>
+    nombre
+    <input type="text" name="nombre" size="30">
+    <br>
+
+    selecciona pais:<br>
+    <select name="pais" size="5">
+        <option value="1">España</option>
+        <option value="2">Portugal</option>
+        <option value="3">Suiza</option>
+        <option value="4">Polonia</option>
+        <option value="5">Francia</option>
+        <option value="6">Chile</option>
+        <option value="7">Cuba</option>
+    </select><br>
+
+     Foto carnet:<br>
+    <input type="file" name="foto">
+    <br>
+
+    Ingrese gmail:<br>
+<input type="email"><br>
+
+    Género: <br>
+    <input type="radio" name="género" value="1" disabled>Hombre<br>
+    <input type="radio" name="género" value="2">Mujer<br>
+    <input type="radio" name="género" value="3">Otro<br>
+</fieldset>
+
+<fieldset>
+    <legend>Otras cosas</legend>
+    comentarios: <br>
+    <textarea name="comentarios" rows="7" cols="70"></textarea>
+    <br>
+
+    Idiomas que hablas:<br>
+    <input type="checkbox" name="español">español<br>
+    <input type="checkbox" name="inglés">inglés<br>
+    <input type="checkbox" name="francés">francés<br>
+
+    qué prefieres<br>
+    <input type="radio" name="frutas" value="1">mandarinas<br>
+    <input type="radio" name="frutas" value="2">manzanas<br>
+    <input type="radio" name="frutas" value="3">cerezas<br>
+    
+    seleccione colores (Presione Ctrl para seleccionar varios colores)<br>
+    <select name="colores[]" size="5" multiple>
+        <option value="1">Rojo</option>
+        <option value="2">Verde</option>
+        <option value="3">Azul</option>
+        <option value="4">Amarillo</option>
+        <option value="5">Blanco</option>
+        <option value="6">Negro</option>
+        <option value="7">Naranja</option>
+        <option value="8">Violeta</option>
+    </select>
+    <br>
+
+    Número favorito:<br>
+    <input type="number"><br>
+
+    Fecha en la que quiere asistir: <br>
+    <input type="month"><br>
+
+    Semana favorita del año:<br>
+    <input type="week"><br>
+
+    Selecciona color de camiseta
+    <input type="color"><br>
+    
+    <br>
+    <textarea name="agradecimientos" rows="5" cols="40">
+        Ingrese aqui sus agradecimientos</textarea><br>
+</fieldset>
+    <br>
+    <button type="submit">Enviar<img src="./imagenes/send2.png" alt="envio"></button>
+    <button type="reset">Borrar<img src="./imagenes/papelera.png" alt="borrado"></button>
+    </form>
+</body>
+
 </html>
