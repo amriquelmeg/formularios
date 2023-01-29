@@ -3,91 +3,99 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Carpintería Juana</title>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
-    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="shortcut icon" type="image/png" href="./imagenes/icono.png">
 </head>
 
 <body>
-    <fieldset>
-        <legend>Datos personales</legend>
-    nombre
-    <input type="text" name="nombre" size="30">
-    <br>
+    <div class="contenedor">
+        <div class="título">
+            <h1>CARPINTERÍA JUANA
+        </div>
+        </h1>
+        <div class="contenido">
+            <h2>Entrevista trabajo para ser Carpintero o Carpintera con horario personalizado</h2>
+            <fieldset>
+                <legend>Datos personales</legend>
+                Intrduzca su nombre:
+                <input type="text" name="nombre" size="30">
+                <br>
 
-    selecciona pais:<br>
-    <select name="pais" size="5">
-        <option value="1">España</option>
-        <option value="2">Portugal</option>
-        <option value="3">Suiza</option>
-        <option value="4">Polonia</option>
-        <option value="5">Francia</option>
-        <option value="6">Chile</option>
-        <option value="7">Cuba</option>
-    </select><br>
+                Selecciona de qué pais procedes:<br>
+                <select name="pais" size="5">
+                    <option value="1">España</option>
+                    <option value="2">Portugal</option>
+                    <option value="3">Suiza</option>
+                    <option value="4">Polonia</option>
+                    <option value="5">Francia</option>
+                    <option value="6">Chile</option>
+                    <option value="7">Cuba</option>
+                </select><br>
 
-     Foto carnet:<br>
-    <input type="file" name="foto">
-    <br>
+                Adjunta foto carnet:<br>
+                <input type="file" name="foto">
+                <br>
 
-    Ingrese gmail:<br>
-<input type="email"><br>
+                Ingrese email de contacto:<br>
+                <input type="email"><br>
 
-    Género: <br>
-    <input type="radio" name="género" value="1" disabled>Hombre<br>
-    <input type="radio" name="género" value="2">Mujer<br>
-    <input type="radio" name="género" value="3">Otro<br>
-</fieldset>
+                Género: <br>
+                <input type="radio" name="género" value="1">Hombre<br>
+                <input type="radio" name="género" value="2">Mujer<br>
+                <input type="radio" name="género" value="3">Otro<br>
 
-<fieldset>
-    <legend>Otras cosas</legend>
-    comentarios: <br>
-    <textarea name="comentarios" rows="7" cols="70"></textarea>
-    <br>
+                ¿Qué iIdiomas hablas?:<br>
+                <input type="checkbox" name="español">español<br>
+                <input type="checkbox" name="inglés">inglés<br>
+                <input type="checkbox" name="francés">francés<br>
 
-    Idiomas que hablas:<br>
-    <input type="checkbox" name="español">español<br>
-    <input type="checkbox" name="inglés">inglés<br>
-    <input type="checkbox" name="francés">francés<br>
+            </fieldset>
 
-    qué prefieres<br>
-    <input type="radio" name="frutas" value="1">mandarinas<br>
-    <input type="radio" name="frutas" value="2">manzanas<br>
-    <input type="radio" name="frutas" value="3">cerezas<br>
-    
-    seleccione colores (Presione Ctrl para seleccionar varios colores)<br>
-    <select name="colores[]" size="5" multiple>
-        <option value="1">Rojo</option>
-        <option value="2">Verde</option>
-        <option value="3">Azul</option>
-        <option value="4">Amarillo</option>
-        <option value="5">Blanco</option>
-        <option value="6">Negro</option>
-        <option value="7">Naranja</option>
-        <option value="8">Violeta</option>
-    </select>
-    <br>
+            <fieldset>
+                <legend>Información específica</legend>
+                ¿Por qué quiere trabajar con nosotros?: <br>
+                <textarea name="comentarios" rows="7" cols="70"></textarea>
+                <br>
 
-    Número favorito:<br>
-    <input type="number"><br>
+                ¿Cuál es su disponibilidad de horario?<br>
+                <input type="radio" name="horario" value="1">Mañana<br>
+                <input type="radio" name="horario" value="2">Tarde<br>
+                <input type="radio" name="horario" value="3">No tengo preferencias<br>
 
-    Fecha en la que quiere asistir: <br>
-    <input type="month"><br>
+                Días de la semana dispinibles para tarabajar (Presione Ctrl para seleccionar varios):<br>
+                <select name="dias de la semana[]" size="5" multiple>
+                    <option value="1">Lunes</option>
+                    <option value="2">Martes</option>
+                    <option value="3">Miércoles</option>
+                    <option value="4">Jueves</option>
+                    <option value="5">Viernes</option>
+                    <option value="6">Sábado</option>
+                </select>
+                <br>
 
-    Semana favorita del año:<br>
-    <input type="week"><br>
+                Años de experiencia:<br>
+                <input type="number"><br>
 
-    Selecciona color de camiseta
-    <input type="color"><br>
-    
-    <br>
-    <textarea name="agradecimientos" rows="5" cols="40">
-        Ingrese aqui sus agradecimientos</textarea><br>
-</fieldset>
-    <br>
-    <button type="submit">Enviar<img src="./imagenes/send2.png" alt="envio"></button>
-    <button type="reset">Borrar<img src="./imagenes/papelera.png" alt="borrado"></button>
-    </form>
+                Fecha para iniciar a trabajar: <br>
+                <input type="month"><br>
+
+                Selecciona color de camiseta del uniforme:
+                <input type="color"><br>
+
+                Ingrese fotos de trabajos realizados:<br>
+                <input type="file">
+
+                <br>
+                <textarea name="comentarios" rows="5" cols="40">
+        Ingrese aquí algo que quiera añadir.</textarea><br>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar<img src="./imagenes/send2.png" alt="envio"></button>
+            <button type="reset">Borrar<img src="./imagenes/papelera.png" alt="borrado"></button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

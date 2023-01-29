@@ -1,0 +1,17 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.contenedor {
+    margin: auto;
+}
+
+.título {
+    background-color: rgb(18, 48, 202);
+    text-align: center;
+}
+
+.contenido {
+    background-color: beige;
+}
