@@ -8,10 +8,16 @@ html {
 }
 
 .título {
-    background-color: rgb(18, 48, 202);
+    background-color:darkcyan ;
     text-align: center;
+    color: aliceblue;
 }
 
 .contenido {
     background-color: beige;
+}
+
+.pie {
+    background-color: darkcyan;
+    color: aliceblue;
 }
